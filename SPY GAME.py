@@ -11,6 +11,7 @@ def spygame(nums):
  spygame([1,0,2,4,0,5,7])
  spygame([1,7,2,0,4,5,0])
  
- #output: TRUE
+ #output: 
+          TRUE
           TRUE
           FALSE
