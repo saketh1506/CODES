@@ -1,0 +1,51 @@
+#subplot 2
+fig,ax = plt.subplots(nrows=2,
+                                         ncols=2,
+                                         figsize=(10,10))
+ax[0,0].plot(x,x/2);
+ax[0,0].set(title='SCATTER PLOT',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+ax[0,1].scatter(np.random.random(10),np.random.random(10));
+ax[0,1].set(title='SCATTER PLOT',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+ax[1,0].bar(nut_butter_prices.keys(),nut_butter_prices.values());
+ax[1,0].set(title='SAKETH NUT BUTTER STORE',
+       xlabel='x-axis',
+       ylabel='PRICE($)')
+
+ax[1,1].hist( np.random.randn(1000));
+ax[1,1].set(title='HISTOGRAPHS',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+fig.savefig("SUBPLOT2.jpg")
+
+#subplot1
+fig,((ax1,ax2),(ax3,ax4)) = plt.subplots(nrows=2,
+                                         ncols=2,
+                                         figsize=(10,10))
+ax1.plot(x,x/2);
+ax1.set(title='SCATTER PLOT',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+ax2.scatter(np.random.random(10),np.random.random(10));
+ax2.set(title='SCATTER PLOT',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+ax3.bar(nut_butter_prices.keys(),nut_butter_prices.values());
+ax3.set(title='SAKETH NUT BUTTER STORE',
+       xlabel='x-axis',
+       ylabel='PRICE($)')
+
+ax4.hist( np.random.randn(1000));
+ax4.set(title='HISTOGRAPHS',
+       xlabel='x-axis',
+       ylabel='y-axis')
+
+fig.savefig("SUBPLOT1.jpg")
